@@ -1,0 +1,83 @@
+{
+  "version": "0.1.0",
+  "generated": "2026-03-26T02:53:09.5025307+00:00",
+  "rules": [
+    {
+      "name": "tools-check",
+      "description": "Verify .NET local tools are restored",
+      "category": "workflow",
+      "ruleSubtype": "Verification",
+      "modes": [
+        "check",
+        "verify"
+      ]
+    },
+    {
+      "name": "test-class",
+      "description": "Generates a test class with mocks, setup, and test method stubs.",
+      "category": "Generation",
+      "ruleSubtype": "Generation",
+      "modes": [
+        "scan",
+        "generate",
+        "verify"
+      ]
+    },
+    {
+      "name": "build-check",
+      "description": "Verify project builds with all analyzers enabled",
+      "category": "build",
+      "ruleSubtype": "Verification",
+      "modes": [
+        "check",
+        "verify"
+      ]
+    },
+    {
+      "name": "test-runner",
+      "description": "Run tests and verify they pass",
+      "category": "build",
+      "ruleSubtype": "Verification",
+      "modes": [
+        "check",
+        "verify"
+      ]
+    },
+    {
+      "name": "service",
+      "description": "Generates a service class with interface, DI registration, and method stubs.",
+      "category": "Generation",
+      "ruleSubtype": "Generation",
+      "modes": [
+        "scan",
+        "generate",
+        "verify"
+      ]
+    },
+    {
+      "name": "api-endpoint",
+      "description": "Generates minimal API endpoint mappings with DTOs, authorization, and typed results.",
+      "category": "api",
+      "ruleSubtype": "Generation",
+      "modes": [
+        "scan",
+        "generate",
+        "verify"
+      ]
+    },
+    {
+      "name": "format-check",
+      "description": "Verify code formatting via dotnet format",
+      "category": "standards",
+      "ruleSubtype": "Verification",
+      "modes": [
+        "check",
+        "verify"
+      ]
+    }
+  ],
+  "layers": {
+    "projectPath": "samples/minimal-api/MinimalApi",
+    "componentPaths": {}
+  }
+}
